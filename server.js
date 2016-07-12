@@ -1,10 +1,10 @@
 var express = require('express');
+var router = require('./router');
 var app = express();
 
-app.get('/', function(req, res) {
-    res.send('Hello world'); 
-});
+app.use(express.static('public'));
+app.use(router);
 
 app.listen(8080, function() {
-    console.log('App is listening at https://timestamp-microservice-nguoinaodo.c9users.io'); 
+    console.log('App is running at https://timestamp-microservice-nguoinaodo.c9users.io'); 
 });
