@@ -5,6 +5,6 @@ var app = express();
 app.use(express.static('public'));
 app.use(router);
 
-app.listen(app.get('port'), function() {
+app.listen(process.env.PORT, function() {
     console.log('App is running'); 
 });
