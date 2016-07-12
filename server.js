@@ -5,6 +5,6 @@ var app = express();
 app.use(express.static('public'));
 app.use(router);
 
-app.listen(8080, function() {
+app.listen(app.get('port'), function() {
     console.log('App is running'); 
 });
