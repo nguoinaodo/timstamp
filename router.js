@@ -38,4 +38,3 @@ function isNatural(str) {
 function isUnix(str) {
     return !isNaN(Number(str));
 }
-
